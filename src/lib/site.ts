@@ -1,7 +1,14 @@
 // Central site settings. Change these (or set the env vars) after buying a domain.
 export const site = {
   name: process.env.NEXT_PUBLIC_SITE_NAME ?? "ToolHub",
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000").replace(/\/$/, ""),
+  // Explicit setting first; on Vercel, fall back to the project's production domain (the custom domain once
+  // one is connected, otherwise the *.vercel.app address); locally, localhost.
+  url: (
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000")
+  ).replace(/\/$/, ""),
   tagline: "Free online calculators, converters & text tools",
   description:
     "33 free, fast and private online tools: salary tax and electricity bill calculators for Pakistan, CGPA, zakat, currency converter, image compressor, PDF merge, QR codes, word counter and more. No sign-up — everything runs in your browser.",

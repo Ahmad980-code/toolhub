@@ -1,0 +1,6 @@
+.env*
+!.env.example
+.analytics
+.next
+node_modules
+*.tsbuildinfo
