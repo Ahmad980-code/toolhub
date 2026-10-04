@@ -8,6 +8,8 @@ Everything runs in the browser. No sign-up, no uploads, no waiting.
 
 ### 🌐 Live site: **[toolhub-eosin.vercel.app](https://toolhub-eosin.vercel.app)**
 
+Official domain: **toolhub.com.pk** (registered with PKNIC, activating soon; use the link above until then)
+
 [![Live site](https://img.shields.io/badge/Live_site-toolhub--eosin.vercel.app-4f46e5?style=for-the-badge&logo=vercel&logoColor=white)](https://toolhub-eosin.vercel.app)
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
