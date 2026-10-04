@@ -6,6 +6,10 @@
 
 Everything runs in the browser. No sign-up, no uploads, no waiting.
 
+### 🌐 Live site: **[toolhub-eosin.vercel.app](https://toolhub-eosin.vercel.app)**
+
+[![Live site](https://img.shields.io/badge/Live_site-toolhub--eosin.vercel.app-4f46e5?style=for-the-badge&logo=vercel&logoColor=white)](https://toolhub-eosin.vercel.app)
+
 ![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
@@ -110,12 +114,17 @@ ToolHub includes a private dashboard at **`/developer`** that shows:
 daily-changing hash), and nothing typed or uploaded into a tool is ever recorded. Bots and headless browsers are
 ignored.
 
-Access is protected by the `DEVELOPER_PASSWORD` environment variable. Locally, without a password, the dashboard is
-open and data is stored in `.analytics/data.json`.
+**Live dashboard:** [toolhub-eosin.vercel.app/developer](https://toolhub-eosin.vercel.app/developer) (password
+required). Access is protected by the `DEVELOPER_PASSWORD` environment variable; on the live site, visits are stored in
+Upstash Redis. When running a local copy without a password, the dashboard is open and data is stored in
+`.analytics/data.json`.
 
 ---
 
-## Getting started
+## Run it locally (for development)
+
+> To **use** ToolHub, just open the live site: **[toolhub-eosin.vercel.app](https://toolhub-eosin.vercel.app)**.
+> The steps below are only for developers who want to run their own copy on their computer to change the code.
 
 **Requirements:** Node.js 20 or newer and npm.
 
@@ -126,8 +135,8 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). The developer dashboard is at
-[http://localhost:3000/developer](http://localhost:3000/developer).
+Your local copy then runs at `http://localhost:3000` (local dashboard: `http://localhost:3000/developer`). These
+`localhost` addresses only work on the computer running the command; everyone else uses the live site above.
 
 | Command | What it does |
 | --- | --- |
