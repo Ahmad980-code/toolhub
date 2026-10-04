@@ -148,6 +148,7 @@ Copy `.env.example` to `.env.local` and fill in what you need. Everything is opt
 | `NEXT_PUBLIC_ADSENSE_CLIENT` | Google AdSense publisher ID (`ca-pub-…`); also generates `/ads.txt` |
 | `NEXT_PUBLIC_ADSENSE_SLOT` | AdSense ad unit ID for the in-page ad slots |
 | `DEVELOPER_PASSWORD` | Password for the `/developer` dashboard (required in production) |
+| `NEXT_PUBLIC_DEV_SHORTCUT` | Optional secret word that opens the dashboard when typed anywhere on the site |
 | `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Upstash Redis credentials for analytics (added automatically by Vercel's Upstash integration) |
 | `ANALYTICS_SALT` | Optional secret used when hashing visitor IDs |
 

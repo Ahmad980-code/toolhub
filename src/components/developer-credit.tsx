@@ -1,4 +1,5 @@
 import { GraduationCap } from "lucide-react";
+import { DevelopersHeading } from "@/components/developer-shortcut";
 import { department, developerNames, developers, university } from "@/lib/team";
 
 /** "Developers" band shown at the bottom of every page, above the copyright line. */
@@ -7,9 +8,7 @@ export function DeveloperCredit() {
     <section aria-labelledby="developers-heading" className="border-t border-border">
       <div className="mx-auto flex max-w-6xl flex-col gap-5 px-4 py-8 md:flex-row md:items-center md:justify-between">
         <div>
-          <h2 id="developers-heading" className="text-xs font-semibold uppercase tracking-wider text-muted">
-            Developers
-          </h2>
+          <DevelopersHeading />
           <p className="mt-2 text-sm text-foreground">
             Co-developed by <span className="font-semibold">{developerNames}</span>
           </p>
