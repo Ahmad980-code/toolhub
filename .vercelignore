@@ -4,3 +4,6 @@
 .next
 node_modules
 *.tsbuildinfo
+.agents
+.claude
+skills-lock.json

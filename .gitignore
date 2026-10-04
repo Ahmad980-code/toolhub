@@ -46,3 +46,8 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# AI-agent skill files added by the Vercel CLI (not part of the app)
+.agents/
+.claude/
+skills-lock.json
